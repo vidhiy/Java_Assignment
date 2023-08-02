@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment</title>
+    <style>
+        /* Initially hide the customer list and add customer sections */
+        .customerList, .addCustomer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login Screen</h2>
+        <form id="LoginForm">
+            <label for="login_id">Login ID:</label>
+            <input type="text" id="login_id" name="login_id" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <div class="customerList">
+        <h2>Customer List</h2>
+        <button id="addCustomerBtn">Add Customer</button>
+        <table id="customerTable" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </table>
+    </div>
+    <div class="addCustomer">
+        <h2>Add a New Customer</h2>
+        <form id="addCustomerForm">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required><br>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+    
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <input type="submit" value="Add Customer">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
